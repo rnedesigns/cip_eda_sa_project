@@ -63,20 +63,19 @@ plt.xlabel("Product IDs")
 plt.ylabel("Sentiment Scores")
 # plt.ylim(0, 5)
 plt.xticks(rotation=90)
-plt.savefig('software_products_senti_graph.png')
+plt.savefig('../datasets_output/software_products_senti_graph.png')
 
 # Create Pandas DataFrame:
 data = {
     'user_review': users_review_text,
     'product_id': products_id,
     'sentiment_score': sentiment_scores
-    # 'sentiment_type': sentiments_type
 }
 
 reviews_df = pd.DataFrame(data)
 print(reviews_df)
 
-reviews_df.to_csv('software_products_sa_df.csv', index=None)
+reviews_df.to_csv('../datasets_output/software_products_sa_df.csv', index=None)
 
 print(reviews_df[['product_id']].value_counts())
 print("Number of products in Software-Products category:", len(reviews_df[['product_id']].value_counts()))

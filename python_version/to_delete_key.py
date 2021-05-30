@@ -7,7 +7,7 @@ import json
 
 
 def del_key():
-    with open('datasets_raw/reviews_ori_data.json') as file:
+    with open('../datasets_raw/reviews_ori_data.json') as file:
         data = json.load(file)
 
         print(len(data['musical_instruments']))
@@ -19,10 +19,8 @@ def del_key():
         for key_ in ['verified', 'reviewerName', 'reviewTime', 'unixReviewTime']:
             item.pop(key_)
 
-        software_products_cleaned = data['software_products']
-
-    with open('datasets_output/software_products_cleaned.json', 'w') as file:
-        json.dump(software_products_cleaned, file, indent=4)
+    with open('../datasets_output/software_products_cleaned.json', 'w') as file:
+        json.dump(data['software_products'], file, indent=4)
 
 
 del_key()
