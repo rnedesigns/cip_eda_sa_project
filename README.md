@@ -8,6 +8,8 @@ The open-source datasets I have chosen are available at:
 
 The datasets I have chosen are: software & office products and musical instruments categories..
 
+The code walkthrough for this is available @ https://youtu.be/cqbimjZjWH4
+
 **Code brief:**
 * delete_key(): to remove unwanted fields/variables from the original datasets.
 * sentiment_analysis_amazon_reviews.py: in this file, I have written code to remove unwanted spaces and new line characters for the next step. From this cleaned json, bar graph and csv files are generated. CSV files are generated with the results containing user_reviews, product_id and sentiment score for each product.
