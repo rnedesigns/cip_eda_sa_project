@@ -8,7 +8,7 @@ The open-source datasets I have chosen are available at:
 
 The datasets I have chosen are: software & office products and musical instruments categories..
 
-The code walkthrough for this is available @ https://youtu.be/cqbimjZjWH4
+The code walkthrough for this, available @ https://youtu.be/cqbimjZjWH4
 
 **Code brief:**
 * delete_key(): to remove unwanted fields/variables from the original datasets.
